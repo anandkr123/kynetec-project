@@ -51,14 +51,14 @@ kedro test
 
 #### File explanations 
 
-- corn.csv              raw corn file from parquet obj.  Not uploaded due to large size. For details see pipelines/data_engineering/pipeline.py (line 18)
+- corn.csv        &nbsp;&nbsp;      raw corn file from parquet obj.  Not uploaded due to large size. For details see pipelines/data_engineering/pipeline.py (line 18)
 
 ### Directory data/03_primary
 
 #### File explanations 
 
-- corn_filtered.csv      corn data after columns and values filttering.
-- corn_final.csv         final corn data after type casting
+- corn_filtered.csv   &nbsp;&nbsp;   corn data after columns and values filttering.
+- corn_final.csv     &nbsp;&nbsp;    final corn data after type casting
 
 ### Directory data/04_feature
 
@@ -70,17 +70,17 @@ kedro test
 
 #### File explanations 
 
-- future_forecast.csv            only future forecast for all states.
-- hist_future_forecasts.csv      forecast for test and future period across all states.
+- future_forecast.csv    &nbsp;&nbsp;        only future forecast for all states.
+- hist_future_forecasts.csv  &nbsp;&nbsp;    forecast for test and future period across all states.
 
 ### Directory data/08_reporting
 
 #### File explanations 
-- mae_and_mape.png           plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
-- mae_mape.csv               MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
-- mape.png                   MEAN ABSOLUTE PERCENTAGE ERROR for relative comparison across all states.
-- prediction_and_mae.png     Predictions 2023 for all states.
-- real_and_forecast.csv      Historical and future predictions along with deviations AND percentage deviations for each year across all states.
+- mae_and_mape.png &nbsp;&nbsp;           plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
+- mae_mape.csv      &nbsp;&nbsp;         MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
+- mape.png           &nbsp;&nbsp;        MEAN ABSOLUTE PERCENTAGE ERROR for relative comparison across all states.
+- prediction_and_mae.png  &nbsp;&nbsp;   Predictions 2023 for all states.
+- real_and_forecast.csv   &nbsp;&nbsp;   Historical and future predictions along with deviations AND percentage deviations for each year across all states.
 
 ### Directory src/tests
 - Test caases for data transformations

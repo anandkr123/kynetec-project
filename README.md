@@ -1,6 +1,6 @@
 # Kynetec-project
 
-Download projecr and mark **src** as Source Root by right click on it.
+Download project and mark **src** as Source Root by right click on it.
 Create and activate virtual environment in PyCharm. Then migrate to src directory.
 
 ## How to install dependencies

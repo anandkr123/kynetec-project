@@ -83,7 +83,7 @@ kedro test
 - real_and_forecast.csv   &nbsp;&nbsp;   Historical and future predictions along with deviations AND percentage deviations for each year across all states.
 
 ### Directory src/tests
-- Test caases for data transformations
+- Test cases for data transformations
 
 ## Results
 

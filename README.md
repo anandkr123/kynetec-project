@@ -33,10 +33,10 @@ kedro test
 - Test period  -    2016 - 2022
 - Predict period -  2023
 
+
 ## Model 
 
-
-##### Prophet time series forecaster [Read more](https://facebook.github.io/prophet/docs/quick_start.html).
+- Prophet time series forecaster [Read more](https://facebook.github.io/prophet/docs/quick_start.html).
 
 
 ## Directory structure  

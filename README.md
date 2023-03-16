@@ -48,7 +48,7 @@ Prophet time series forecaster [Read more](https://facebook.github.io/prophet/do
 
 #### File explanations 
 
-- corn.csv              raw corn file from parquet obj.  
+- corn.csv              raw corn file from parquet obj.  Not uploaded due to large size. For details see pipelines/data_engineering/pipeline.py (line 18)
 
 ### Directory data/03_primary
 

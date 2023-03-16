@@ -145,13 +145,11 @@ def report_mae_mape(df_actual: pd.DataFrame, df_hist_future_forecast: pd.DataFra
     return real_and_forecast, future_forecast, mae_mape
 
 
-def plot_predictions_mae(mae_mape: pd.DataFrame, future_forecast: pd.DataFrame,
-                         train_target_variable: Dict) -> plt:
+def plot_predictions(future_forecast: pd.DataFrame, train_target_variable: Dict) -> plt:
 
     """
     Plots predictions for multiple time series given the specified period.
     Args:
-        mae_mape: A pandas data frame metrics of mae and mape.
         future_forecast: A pandas dataframe with future predictions for multiple time series.
         train_target_variable: Columns and parameters used in data pre-processing and predictions.
 
@@ -162,22 +160,20 @@ def plot_predictions_mae(mae_mape: pd.DataFrame, future_forecast: pd.DataFrame,
     plt.style.use('_mpl-gallery')
 
     other_column = train_target_variable['other_columns'][0]
-    # Future forecast with historical mape and mae
-    forecasts_and_error = pd.merge(left=mae_mape, right=future_forecast, on=[other_column], how="inner")
-    x = forecasts_and_error[other_column]
-    y = forecasts_and_error['yhat']
-    yerr = forecasts_and_error['mae']
+    # Future forecast for all states
+    x = future_forecast[other_column]
+    y = future_forecast['yhat']
 
     # plot:
     plt.rcParams["figure.figsize"] = [12, 12]
     plt.rcParams["figure.autolayout"] = True
-    plt.errorbar(x, y, yerr, fmt='o', elinewidth=3, capsize=9, capthick=2.0, ecolor='orange', markersize=8)
+    plt.plot(x, y, 'o', ms=12, color='darkorange')
     plt.xticks(rotation=45, fontsize=12, fontweight='semibold')
     plt.yticks(fontsize=13, fontweight='semibold')
     plt.xlabel(other_column)
     plt.ylabel('PREDICTIONS 2023')
 
-    plt.title("CORN Predictions 2023 with possible deviations")
+    plt.title("CORN Predictions 2023")
     return plt
 
 

@@ -1,7 +1,7 @@
 from kedro.pipeline import Pipeline, node
 from kedro.pipeline.modular_pipeline import pipeline
 from .nodes import (data_preprocessing, make_predictions, report_mae_mape,
-                    plot_predictions_mae, plot_mae_mape, plot_mape)
+                    plot_predictions, plot_mae_mape, plot_mape)
 
 
 def create_pipeline(**kwargs) -> Pipeline:
@@ -41,10 +41,10 @@ def create_pipeline(**kwargs) -> Pipeline:
                 name="report_mae_mape"
             ),
             node(
-                func=plot_predictions_mae,
-                inputs=["mae_mape", "future_forecast", "params:train_target_variable"],
-                outputs="plot_predictions_and_mae",
-                name="plot_predictions_and_mae",
+                func=plot_predictions,
+                inputs=["future_forecast", "params:train_target_variable"],
+                outputs="plot_predictions",
+                name="plot_predictions",
             ),
             node(
                 func=plot_mae_mape,

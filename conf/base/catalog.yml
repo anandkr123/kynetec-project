@@ -40,9 +40,9 @@ mae_mape:
   type: pandas.CSVDataSet
   filepath: data/08_reporting/mae_mape.csv
 
-plot_predictions_and_mae:
+plot_predictions:
   type: matplotlib.MatplotlibWriter
-  filepath: data/08_reporting/prediction_and_mae.png
+  filepath: data/08_reporting/future_predictions.png
   save_args:
     dpi: 300
 

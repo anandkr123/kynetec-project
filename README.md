@@ -38,19 +38,19 @@ Prophet time series forecaster [Read more](https://facebook.github.io/prophet/do
 
 ## Directory structure  
 
--- Directory data/01_raw
+### Directory data/01_raw
 
-### File explanations 
+#### File explanations 
 
--- Parquet object
+-Parquet object
 
---Directory data/02_intermediate
+### Directory data/02_intermediate
 
-### File explanations 
+#### File explanations 
 
--- corn.csv       --> Raw corn file from parquet obj.  
+-corn.csv       --> Raw corn file from parquet obj.  
 
--- Directory data/03_primary
+-Directory data/03_primary
 
 ### File explanations 
 

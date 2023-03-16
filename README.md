@@ -76,7 +76,7 @@ kedro test
 ### Directory data/08_reporting
 
 #### File explanations 
-- mae_and_mape.png &nbsp;&nbsp;           plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
+- mae_and_mape.png &nbsp;&nbsp;          Plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
 - mae_mape.csv      &nbsp;&nbsp;         MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
 - mape.png           &nbsp;&nbsp;        MEAN ABSOLUTE PERCENTAGE ERROR for relative comparison across all states.
 - prediction_and_mae.png  &nbsp;&nbsp;   Predictions 2023 for all states.

@@ -32,10 +32,58 @@ kedro test
 
 ## Model 
 
--- Prophet
+```
+Prophet time series forecaster [Read more](https://facebook.github.io/prophet/docs/quick_start.html)
+```
 
-## Results 
+## Directory structure  
+
+--Directory data/01_raw
+
+### File explanations 
+
+-- Parquet object
+
+--Directory data/02_intermediate
+
+### File explanations 
+
+-- corn.csv       --> Raw corn file from parquet obj.  
+
+-- Directory data/03_primary
+
+### File explanations 
+
+--corn_filtered.csv -->  corn data after columns and values filttering.
+--corn_final.csv    -->  final corn data after type casting
+
+-- Directory data/04_feature
+
+### File explanations 
+
+-- Corn data preprocessed for model input format.
+
+
+-- Directory data/07_model_output
+
+### File explanations 
+
+--future_forecast.csv        --> only future forecast for all states.
+--hist_future_forecasts.csv  --> forecast for test and future period across all states.
+
 -- Directory data/08_reporting
+
+### File explanations 
+--mae_and_mape.png       --> plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
+--mae_mape.csv           --> MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
+--mape.png               --> MEAN ABSOLUTE PERCENTAGE ERROR for relative comparison across all states.
+--prediction_and_mae.png --> Predictions 2023 for all states.
+--real_and_forecast.csv  --> Historical and future predictions along with deviations AND percentage deviations for each year across all states.
+
+--  Directory src/tests
+-- Test caases for data transformations
+
+## Results
 
 ### MEAN ABSOLUTE ERROR(MAE) ON TEST PERIOD
 

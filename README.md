@@ -38,7 +38,7 @@ Prophet time series forecaster [Read more](https://facebook.github.io/prophet/do
 
 ## Directory structure  
 
---Directory data/01_raw
+-- Directory data/01_raw
 
 ### File explanations 
 

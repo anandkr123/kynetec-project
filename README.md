@@ -42,13 +42,13 @@ Prophet time series forecaster [Read more](https://facebook.github.io/prophet/do
 
 #### File explanations 
 
--Parquet object
+- Parquet object
 
 ### Directory data/02_intermediate
 
 #### File explanations 
 
--corn.csv       --> Raw corn file from parquet obj.  
+- corn.csv       --> Raw corn file from parquet obj.  
 
 -Directory data/03_primary
 

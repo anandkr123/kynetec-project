@@ -50,9 +50,9 @@ Prophet time series forecaster [Read more](https://facebook.github.io/prophet/do
 
 - corn.csv              raw corn file from parquet obj.  
 
--Directory data/03_primary
+### Directory data/03_primary
 
-### File explanations 
+#### File explanations 
 
 - corn_filtered.csv      corn data after columns and values filttering.
 - corn_final.csv         final corn data after type casting

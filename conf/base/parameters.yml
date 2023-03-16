@@ -1,0 +1,23 @@
+# Config parameters
+
+corn_filters:
+  columns: ['STATISTICCAT_DESC', 'AGG_LEVEL_DESC', 'SHORT_DESC', 'REFERENCE_PERIOD_DESC']
+  values: ['AREA PLANTED', 'AREA HARVESTED', 'YIELD','STATE','CORN - ACRES PLANTED', 'YEAR']
+  columns_exclude: ['STATE_NAME']
+  values_exclude: ['OTHER STATES']
+
+corn_fix_datatypes:
+  columns: ['VALUE']
+  datatypes: ['float64']
+
+train_target_variable:
+  date_column: 'YEAR'
+  target_column: 'VALUE'
+  forecast_period: 1
+  other_columns: ['STATE_ALPHA']
+  split_date: '2015-01-01'
+
+training_hyperparameters:
+  seasonality_mode: 'multiplicative'
+  n_changepoints: 50
+  changepoint_prior_scale: 0.5

@@ -12,8 +12,8 @@ nbstripout~=0.4
 pytest-cov~=3.0
 pytest-mock>=1.7.1, <2.0
 pytest~=7.2
-prophet~=1.1.2
-kedro[pandas]~=3.2.2
-kedro[pandas.ParquetDataSet]~=1.0.0
-kedro-datasets[matplotlib.MatplotlibWriter]~=1.0.2
-kedro-viz~=5.3.0
+prophet
+kedro[pandas]
+kedro[pandas.ParquetDataSet]
+kedro-datasets[matplotlib.MatplotlibWriter]
+kedro-viz

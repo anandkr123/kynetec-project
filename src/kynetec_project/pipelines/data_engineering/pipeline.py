@@ -15,12 +15,12 @@ def create_pipeline(**kwargs) -> Pipeline:
     """
     return pipeline(
         [
-            # node(                                         # Comment this node after first run.
-            #     func=load_dataset,                        # May exceed RAM IF run every time
-            #     inputs="corn_parquet",
-            #     outputs="corn",
-            #     name="read_corn_parquet_object"
-            # ),
+            node(                                         # Comment this node after first run.
+                func=load_dataset,                        # May exceed RAM IF run every time
+                inputs="corn_parquet",
+                outputs="corn",
+                name="read_corn_parquet_object"
+            ),
             node(
                 func=filter_dataset,
                 inputs=["corn", "params:corn_filters"],

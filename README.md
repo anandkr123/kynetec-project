@@ -26,9 +26,9 @@ kedro test
 
 ## Train Test period 
 
-- Train period - (1919-1924) -- 2015
-- Test period  - 2016 -- 2022
-- Predict period - 2023
+- Train period -    (1919-1924) - 2015
+- Test period  -    2016 - 2022
+- Predict period -  2023
 
 ## Model 
 

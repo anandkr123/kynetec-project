@@ -33,7 +33,7 @@ kedro test
 ## Model 
 
 ```
-Prophet time series forecaster [Read more](https://facebook.github.io/prophet/docs/quick_start.html)
+Prophet time series forecaster [Read more](https://facebook.github.io/prophet/docs/quick_start.html).
 ```
 
 ## Directory structure  

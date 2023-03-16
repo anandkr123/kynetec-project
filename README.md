@@ -79,11 +79,11 @@ kedro test
 - mae_and_mape.png &nbsp;&nbsp;          Plot MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
 - mae_mape.csv      &nbsp;&nbsp;         MEAN ABSOLUTE ERROR and MEAN ABSOLUTE PERCENTAGE ERROR on Test data (PERIOD 2016-2022) acrocss all states.
 - mape.png           &nbsp;&nbsp;        MEAN ABSOLUTE PERCENTAGE ERROR for relative comparison across all states.
-- prediction_and_mae.png  &nbsp;&nbsp;   Predictions 2023 for all states.
+- future_predictions.png  &nbsp;&nbsp;   Predictions 2023 for all states.
 - real_and_forecast.csv   &nbsp;&nbsp;   Historical and future predictions along with deviations AND percentage deviations for each year across all states.
 
 ### Directory src/tests
-- Test caases for data transformations
+- Test cases for data transformations
 
 ## Results
 
@@ -99,4 +99,7 @@ kedro test
 
 ### PREDICTION 2023 ACORSS ALL STATES
 
-![prediction_and_mae](https://user-images.githubusercontent.com/23450113/225747185-556c5fea-64de-4db9-a122-2a06ea2cd838.png)
+![future_predictions](https://user-images.githubusercontent.com/23450113/225773553-122d1713-d359-42f6-b7fe-3f2b23effc05.png)
+
+
+

@@ -71,7 +71,7 @@ def train_predict_single_group(group: pd.DataFrame, train_target_variable,
     return forecast
 
 
-def make_predictions(df: pd.DataFrame, train_target_variable: Dict,
+def train_make_predictions(df: pd.DataFrame, train_target_variable: Dict,
                      training_hyperparameters: Dict) -> pd.DataFrame:
     """
     Training and predictions for multiple time series.
@@ -92,7 +92,7 @@ def make_predictions(df: pd.DataFrame, train_target_variable: Dict,
     # Each group i.e. state
     groups_by_ticker = df.groupby(other_column)
     ticker_list = unique_tickers.tolist()
-    # ticker_list = ticker_list[1:5]                   # UNCOMMENT WHEN PREDICTING FOR FIRST FEW STATES
+    ticker_list = ticker_list[1:5]                   # UNCOMMENT WHEN PREDICTING FOR FIRST FEW STATES
     all_states_forecast = pd.DataFrame()
 
     # Loop through each ticker(state)

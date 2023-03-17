@@ -13,7 +13,7 @@ pip install -r src/requirements.txt
 
 ## How to run your Kedro pipeline
 
-You can run your Kedro project with:
+You can run the Kedro project with:
 
 ```
 kedro run
@@ -21,7 +21,7 @@ kedro run
 
 ## How to test your Kedro project
 
-Have a look at the file `src/tests/test_run.py` for instructions on how to write your tests. You can run your tests as follows:
+You can run the tests as follows:
 
 ```
 kedro test

@@ -1,4 +1,4 @@
-# Kynetec-project
+# Time-series corn Predictions 2023
 
 Download project and mark **src** as Source Root by right click on it.
 Create and activate virtual environment in PyCharm. Then migrate to src directory.
